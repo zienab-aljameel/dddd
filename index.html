@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D project</title>
+    <!-- css styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/small_mobile.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/small-tablet.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/computer.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Economica:ital@1&family=Khand:wght@500&family=Playpen+Sans:wght@500;600&family=Stardos+Stencil&family=Sunflower:wght@300&display=swap" rel="stylesheet">    <!-- 3d opject -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section class="sec1">
+        <aside class="left-side">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="">
+            </div>
+            <div class="icons">
+                <div class="icons-title">
+                    Features
+                </div>
+                <a href=""><ion-icon name="nuclear-outline"></ion-icon></a>
+                <a href=""><ion-icon name="radio-outline"></ion-icon></a>
+                <a href=""><ion-icon name="flash-outline"></ion-icon></a>
+            </div>
+            <div class="accessory">
+                <img src="images/Accessory.jpg" alt="">
+            </div>
+        </aside>
+        <header class="header">
+            <ul>
+                <li class="informations">
+                    <a href="" class="about-us">
+                        About us <ion-icon name="add-outline"></ion-icon>
+                    </a>
+                    <a href="" class="support">
+                        Support <ion-icon name="add-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="title">
+                    <a href="">
+                        AKRACING
+                    </a>
+                </li>
+                <li class="site">
+                    <a href="">
+                        <ion-icon name="globe-outline"></ion-icon> 
+                        www.AKRACING.com
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <aside class="right-side">
+            <div class="right-side-head">
+                <a href="">Support</a>
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </div>
+
+            <div class="product-colors-container">
+                <div class="product-color">
+                    <div class="profile-title">
+                        Colors
+                    </div>
+                    <a href=""><img class="red" src="images/chiar-green.png" alt=""></a>
+                    <a href=""><img src="images/chiar-purple.png" alt=""></a>
+                    <a href=""><img class="orange" src="images/chiar-orange.png" alt=""></a>
+                    <a href=""><img class="yellow" src="images/chiar-yellow.png" alt=""></a>
+
+                </div>
+                <a href="" class="profile">
+                    <img src="images/profile-img2.jpg" alt="">
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="next">
+                <a href=""><ion-icon name="chevron-forward-outline"></ion-icon></a>
+            </div>
+        </aside>
+        
+        <div class="gaming-chair-container">
+            <div class="gaming-chair">
+                <model-viewer class="gaming-chair-gltf chair" id="orbit-demo" interpolation-decay="200" src="scene.gltf" alt="A 3D model of an astronaut"></model-viewer>
+                <script>
+                (() => {
+                const modelViewer = document.querySelector('#orbit-demo');
+                const orbitCycle = [
+                    '75deg 55deg 4m',
+                    '-60deg 110deg 2m',
+                    '-180deg 90deg 2.4m',
+                    modelViewer.cameraOrbit
+                ];
+                setInterval(() => {
+                    const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
+                    modelViewer.cameraOrbit =
+                        orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
+                }, 4000); 
+                })(); 
+                </script>
+            </div>
+        </div>
+
+        <div class="columns-container">
+            <div class="columns">
+                <div class="column column1">
+                    <div class="informations-container">
+                        <div class="numbers">
+                            <div class="num active">1</div>
+                            <div class="num">2</div>
+                            <div class="num">3</div>
+                            <div class="num">4</div>
+                        </div>
+                        <div class="information">
+                            whether you're after optimal ergonomics or all-day comfort,
+                            find the support you're looking for with our range of PC gaming 
+                            chairs designed to fit every gamer.
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <span>Most Comfortable <br> And Relaxing</span>
+                    <div class="by">
+                        _active_programmr_
+                    </div>
+                </div>
+                <div class="column column2">
+                    <div class="gamingchair">
+                        AKRacing Chair
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="about about2" id="about">
+            <div class="title">About Us</div>
+            First in automotive sports, and then expanding to gaming and office furniture,
+            AKRacing has been in business since 2001.
+            Since the very beginning, AKRacing operated its own factory for manufacturing and the
+            AKD sub-division for design of products and parts, never engaging in OEM.
+            AKRacing does 100% of its own design, product development, testing and quality control
+            in-house, controlling the full user experience to a degree most other brands can’t or just don’t.
+        </div>
+        <div class="inf inf2" id="inf">
+            <div class="details">
+                relax neck muscles
+                <span class="line"></span>
+            </div>
+            <div class="details">
+                relieve wrist fatigue
+                <span class="line"></span>
+            </div>
+            <div class="details">
+                comfy moldet armrests
+                <span class="line"></span>
+            </div>
+            <div class="details">
+                hard back
+                <span class="line"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

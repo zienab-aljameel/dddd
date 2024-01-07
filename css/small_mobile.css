@@ -1,0 +1,211 @@
+@media (max-width: 500px) {
+    .sec1 {
+        overflow: hidden;
+    }
+    .sec1 aside {
+        backdrop-filter: blur (3px);
+    } 
+    .left-side {
+        width: 170px;
+        height: 100%;
+        padding-bottom: 120px;
+    }    
+    .left-side .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .left-side .logo img {
+        margin-top: 20px;
+    }
+    .support {
+        display: none;
+    }
+    a {
+        font-size: 16px;
+    }
+    .icons ion-icon {
+        font-size: 13px;
+    }
+    .accessory {
+        width: 44px;
+        height: 44px;
+    }
+    .accessory img {
+        border-radius: 15px;
+    }
+    .header ul .informations a {
+        font-size: 9.5px;
+        font-weight: 600;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.514);
+    }
+    .site {
+        display: none;
+    }
+    .header ul .site {
+        display: none;
+    }
+    .right-side-head {
+        width: 100%;
+        height: 113px;
+    }
+    .right-side-head ion-icon {
+        display: none;
+    }
+
+    .right-side-head a {
+        font-size: 9px;
+        padding-bottom: 34px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.514);
+    }
+    .right-side .product-colors-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 52%;
+    }
+    .product-colors-container .product-color {
+        height: 200px;
+    }
+    .product-colors-container .product-color img {
+        width: 40px;
+    }
+    .sec1 .columns-container {
+        left: 0;
+    }
+    .sec1 .columns-container .columns .column {
+        width: 4%;
+        left: -6px;
+        display: none;
+    }
+    .sec1 .columns-container .columns .column2 {
+        display: none;
+    }
+    .sec1 .columns-container .columns .text {
+        width: 100%;
+    }
+    .sec1 .columns-container .columns .text span {
+        /* position: absolute; */
+        font-size: 22px;
+        top: 150px;
+        color: rgba(255, 255, 255, 0.514);
+    }
+    .right-side {
+        width: 170px;
+    }  
+    
+
+    .product-colors-container .profile {
+        width: 70px;
+        height: 34px;
+    }
+
+    .product-colors-container .profile img {
+        width: 28px;
+        height: 28px;
+    }
+    .informations-container {
+        left: 0;
+    }
+    .gaming-chair-container {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    
+    .sec1 .gaming-chair .chair {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+        padding: 0;
+        right: -30px;
+        bottom: 180px;
+    }
+    .sec1 .gaming-chair .gaming-chair-gltf {
+        width: 260px;
+        height: 260px;
+        top: 20%;
+        margin-left: 67px;
+    }
+    .informations-container {
+        width: 170px;
+        left: 15px;
+        bottom: 30px;
+    }
+
+    .profile-title {
+        color: rgba(255, 255, 255, 0.514);
+        font-size: 11px;
+    }
+    .icons .icons-title, .profile-title {
+        color: rgba(255, 255, 255, 0.514);
+        font-size: 11px;
+    }
+    .informations-container .information {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.514);
+    }
+
+    .sec1 .columns-container .columns .text .by {
+        color: rgba(255, 255, 255, 0.514);
+    }
+
+
+
+
+    .sec2 {
+        position: relative;
+        overflow: hidden;
+    }
+    .gaming-chair-gltf {
+        transform: translate(90px, 750px);
+        width: 40px;
+        overflow: hidden;
+        height: 400px;
+        position: absolute;
+        bottom: 30px;
+        left: -0px;
+        filter: drop-shadow(4px 19px 10px rgba(0, 0, 0, 0.87));
+}
+    .about {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        padding: 30px;
+        font-size: 11px;
+    }
+    .about2 {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        padding: 30px;
+        font-size: 11px;
+    }
+    .about .title {
+        font-size: 14px;
+    }
+    
+    .inf {
+        height: 274px;
+        font-size: 9px;
+        margin-left: -60px;
+        margin-top: 0px;
+        line-height: 3ch;
+        animation: none;
+        -webkit-animation: none;
+}
+
+.inf
+{
+    height: 274px;
+}
+    .line {
+        width: 66px;
+    }
+}
